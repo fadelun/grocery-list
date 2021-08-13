@@ -1,0 +1,105 @@
+// @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color : #F6C6EA;
+    font-family: 'Arabella',sans-serif;
+}
+
+.container{
+    width: 90vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .grocery-list{
+        background-color: #FEF7DC;
+        padding: 8px;
+        width: 500px;
+        height: 90vh;
+        box-shadow:  6px 6px 10px rgba(0, 0, 0, 0.671);
+
+        h1{
+            text-align: center;
+            font-weight: 800;
+            font-size: 3.8rem;
+        }
+
+        .inputItem{
+            text-align: center;
+            margin-top: 5%;
+            
+            input{
+                margin-left: 2%;
+                background: transparent;
+                border: 0;
+                border-bottom: 1px solid black;
+                width: 80%;
+                height: 30px;
+                font-size:1.2rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .list-item{
+            margin-top: 5%;
+            padding-left: 30px;
+            font-weight: 400;
+            li{
+                font-size: 2rem;
+                margin-top: 4px;
+                text-transform: capitalize;
+
+                &:hover{
+                    cursor: default;
+                }
+            }
+
+            .line-through{
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    @media (max-width : 400px){
+            .grocery-list{
+                h1{
+                    font-size: 3rem;
+                }
+
+                .list-item{
+                    li{
+                        font-size: 1.6rem;
+                    }
+
+            }
+            
+        }
+    }
+
+    @media (max-width : 300px) {
+        .grocery-list{
+            h1{
+                font-size: 2.4rem;
+            }
+
+            .list-item{
+                li{
+                    font-size: 1rem;
+                }
+
+        }
+        
+    }
+    }
+}
